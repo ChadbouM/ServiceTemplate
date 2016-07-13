@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Main.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DisplayName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DISPLAY STRING</Value>
+    </Setting>
+    <Setting Name="ServiceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NAME</Value>
+    </Setting>
+    <Setting Name="LogLevel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
