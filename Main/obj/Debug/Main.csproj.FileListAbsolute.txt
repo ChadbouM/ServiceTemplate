@@ -1,6 +1,0 @@
-c:\users\zig\Documents\Visual Studio 2015\Projects\TestService\Main\bin\Debug\install.bat
-c:\users\zig\Documents\Visual Studio 2015\Projects\TestService\Main\bin\Debug\Main.exe.config
-c:\users\zig\Documents\Visual Studio 2015\Projects\TestService\Main\bin\Debug\Main.exe
-c:\users\zig\Documents\Visual Studio 2015\Projects\TestService\Main\bin\Debug\Main.pdb
-c:\users\zig\Documents\Visual Studio 2015\Projects\TestService\Main\obj\Debug\Main.exe
-c:\users\zig\Documents\Visual Studio 2015\Projects\TestService\Main\obj\Debug\Main.pdb

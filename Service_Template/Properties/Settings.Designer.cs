@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Main.Properties {
+namespace Service_Template.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,7 +25,7 @@ namespace Main.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DISPLAY STRING")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MY_TEST_SERVICE")]
         public string DisplayName {
             get {
                 return ((string)(this["DisplayName"]));
@@ -37,7 +37,7 @@ namespace Main.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("NAME")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MY_SERVICE")]
         public string ServiceName {
             get {
                 return ((string)(this["ServiceName"]));

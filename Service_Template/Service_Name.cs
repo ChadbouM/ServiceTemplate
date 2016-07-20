@@ -1,26 +1,28 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.ServiceProcess;
-using Main.Properties;
+using Service_Template.Properties;
+using System.ComponentModel;
+using System;
 
-namespace ServiceTemplate
+namespace Service_Name
 {
-    class TemplateService : ServiceBase
+    [DesignerCategory("")]
+    public class Service_Name : ServiceBase
     {
-        /// <summary> Constructor:
+        /// <summary> Initialize:
         /// Performs the initial setup for the service
         /// </summary>
-        public TemplateService()
+        public void Initialize()
         {
-            this.ServiceName  = Settings.Default.ServiceName;
-            this.EventLog.Log = Settings.Default.LogLevel;
+            ServiceName  = Settings.Default.ServiceName;
+            EventLog.Log = Settings.Default.LogLevel;
 
             // Event Flags:
-            this.CanHandlePowerEvent         = false;
-            this.CanHandleSessionChangeEvent = false;
-            this.CanPauseAndContinue         = false;
-            this.CanShutdown                 = false;
-            this.CanStop                     = false;
+            CanHandlePowerEvent         = false;
+            CanHandleSessionChangeEvent = false;
+            CanPauseAndContinue         = false;
+            CanShutdown                 = false;
+            CanStop                     = false;
         }
 
         /// <summary> Main: 
@@ -28,7 +30,9 @@ namespace ServiceTemplate
         /// </summary>
         static void Main()
         {
-            ServiceBase.Run(new TemplateService());
+            Service_Name service = new Service_Name();
+            service.Initialize();
+            ServiceBase.Run(service);
         }
 
         /// <summary> Dispose: 
@@ -110,7 +114,7 @@ namespace ServiceTemplate
         /// Performs activity surrounding session events
         /// </summary>
         /// <param name="changeDescription">Type of session event</param>
-        protected override void OnSessionChange( SessionChangeDescription changeDescription)
+        protected override void OnSessionChange(SessionChangeDescription changeDescription)
         {
             base.OnSessionChange(changeDescription);
         }
